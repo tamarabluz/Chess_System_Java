@@ -1,9 +1,9 @@
 package chess;
-
 import boardgame.Board;
 import boardgame.Piece;
+import boardgame.Position;
 
-public class ChessPiece extends Piece{
+public abstract class ChessPiece extends Piece{
 	
 	private Color color;
 
@@ -16,5 +16,6 @@ public class ChessPiece extends Piece{
 		return color;
 	}
 
-	
+
+	public abstract boolean[][] possibleMoves();
 }
